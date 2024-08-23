@@ -1,3 +1,18 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  display: flex; /* or inline-flex, depending on your need */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 .statusSection {
   background-color: white;
   width: 25%;
@@ -12,8 +27,9 @@
 }
 
 .statusTopBarRight {
-  justify-content: right;
-  padding: 5px;
+  padding: 5px 10px;
+  align-content: center;
+  margin-top: 5px;
 }
 
 .center {
@@ -23,7 +39,6 @@
 .statusCard {
   padding: 0px 10px 0px 10px;
   display: flex;
-  flex-direction: column;
 }
 .statusCardTop {
   width: 20%;
@@ -31,17 +46,20 @@
 
 .statusCardMiddle {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
   width: 60%;
+  gap: 0;
 }
 
 .statusCardBottom {
   display: flex;
+  flex-direction: column;
   justify-content: flex-end;
   width: 20%;
 }
 .mainMessageAreaContainer {
-  background-color: lightgrey;
+  background-color: rgb(226, 221, 221);
+  width: 75%;
 }
 
 .topBar {
@@ -53,7 +71,7 @@
 
 .topBarRight {
   display: flex;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
 }
 .cardMessage {
   display: flex;
@@ -88,4 +106,47 @@
 }
 .photoCardMainBottomRight {
   align-self: end;
+}
+
+.gear-icon {
+  font-size: 24px;
+  color: #333;
+  opacity: 0.5;
+}
+.plus-sign {
+  font-size: 24px; /* Adjust the size */
+  color: gray;
+}
+.searchBar {
+  justify-content: center;
+  width: 80%;
+  margin-bottom: 5px;
+}
+.person {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  margin: 5px;
+}
+.statusCardBottom p {
+  color: mediumblue;
+  opacity: 80%;
+  font-size: 80%;
+}
+
+.circle {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+.statusCardBottom .circle {
+  align-self: right;
 }
