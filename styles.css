@@ -112,8 +112,14 @@ main {
   background-color: rgb(162, 242, 162);
 }
 
+.fileCard {
+  background-color: rgb(162, 242, 162);
+  display: inline-flex;
+  width: auto;
+}
+
 .photoCardMain {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   padding: 15px;
   width: auto;
@@ -123,9 +129,10 @@ main {
 
 .photoCardMainBottom {
   display: flex;
+  justify-content: space-between;
 }
 .photoCardMainBottomRight {
-  align-self: end;
+  align-content: end;
 }
 
 .gear-icon {
@@ -188,4 +195,23 @@ h2 {
 .photoCardMainTop img {
   max-width: 500px;
   max-height: 300px;
+}
+
+.happy-face {
+  font-size: 24px;
+  color: black;
+  margin-right: 5px;
+}
+.paper-clip {
+  font-size: 24px;
+  color: black;
+  margin-right: 5px;
+}
+
+.bottomMessArea {
+  display: flex;
+  background-color: white;
+  margin-left: 5px;
+  margin-right: 5px;
+  justify-content: space-between;
 }
