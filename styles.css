@@ -21,15 +21,13 @@ main {
 .statusTopBar {
   display: flex;
   justify-content: space-between;
-}
-
-.statusTopBarLeft {
+  margin-top: 20px;
+  margin-left: 10px;
 }
 
 .statusTopBarRight {
-  padding: 5px 10px;
+  padding: 0px 10px 0px 0px;
   align-content: center;
-  margin-top: 5px;
 }
 
 .center {
@@ -39,6 +37,7 @@ main {
 .statusCard {
   padding: 0px 10px 0px 10px;
   display: flex;
+  max-height: 60px;
 }
 .statusCardTop {
   width: 20%;
@@ -47,45 +46,62 @@ main {
 .statusCardMiddle {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 60%;
+  margin: 5px 0px;
+
   gap: 0;
 }
 
 .statusCardBottom {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
+  margin: 5px 0px;
   width: 20%;
 }
 .mainMessageAreaContainer {
-  background-color: rgb(226, 221, 221);
+  background-color: rgb(246, 243, 243);
+
   width: 75%;
 }
 
 .topBar {
   display: flex;
   justify-content: space-between;
-}
-.topBarLeft {
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 .topBarRight {
   display: flex;
   /* justify-content: flex-end; */
 }
-.cardMessage {
+
+.messageCard {
   display: flex;
+  width: auto;
 }
 
+.cardMessage {
+  display: flex;
+  background-color: white;
+  width: auto;
+  margin: 15px 15px;
+  min-height: 30px;
+}
+.messageLeft {
+  justify-content: center;
+  padding-right: 10px;
+  padding-left: 10px;
+}
 .messageCenter {
   font-size: small;
   opacity: 0.5;
-  vertical-align: bottom;
+  align-content: end;
 }
 .messageRight {
-  color: blue;
-  opacity: 0.5;
-  vertical-align: bottom;
+  align-content: end;
 }
 .systemMessageCard {
   opacity: 0.5;
@@ -99,6 +115,10 @@ main {
 .photoCardMain {
   display: flex;
   flex-direction: column;
+  padding: 15px;
+  width: auto;
+  background-color: white;
+  margin: 15px 15px;
 }
 
 .photoCardMainBottom {
@@ -120,7 +140,7 @@ main {
 .searchBar {
   justify-content: center;
   width: 80%;
-  margin-bottom: 5px;
+  margin: 10px;
 }
 .person {
   width: 50px;
@@ -132,21 +152,40 @@ main {
   color: mediumblue;
   opacity: 80%;
   font-size: 80%;
+  align-self: end;
 }
 
 .circle {
   display: inline-block;
-  width: 24px;
-  height: 24px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
   background-color: blue;
   color: white;
   text-align: center;
   line-height: 24px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   font-family: Arial, sans-serif;
+  margin-left: auto;
 }
-.statusCardBottom .circle {
-  align-self: right;
+p {
+  margin: 0;
+}
+.topBarRight img {
+  width: 25px;
+  height: 25px;
+}
+h4,
+h2 {
+  margin: 5px 5px;
+}
+.double-check {
+  color: #072532;
+  font-size: 10px;
+  padding: 0px 0px 5px 5px;
+}
+.photoCardMainTop img {
+  max-width: 500px;
+  max-height: 300px;
 }
