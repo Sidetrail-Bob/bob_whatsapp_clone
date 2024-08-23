@@ -1,0 +1,87 @@
+.statusSection {
+  background-color: white;
+  width: 25%;
+}
+
+.statusTopBar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.statusTopBarLeft {
+}
+
+.statusTopBarRight {
+    justify-content: right;
+    padding 5px;
+
+}
+
+.center {
+    align-items: center;
+}
+
+.statusCard  {
+    padding: 0px 10px 0px 10px;
+    display:flex;
+    flex-direction:column;
+}
+.statusCardTop {
+    width:20%;
+}
+
+.statusCardMiddle {
+    display:flex;
+    justify-content: flex-start;
+    width:60%;
+}
+
+.statusCardBottom {
+    display:flex;
+    justify-content: flex-end;
+    width:20%;
+}
+.mainMessageAreaContainer {
+    background-color:lightgrey;
+
+}
+
+.topBar {
+    display:flex;
+    justify-content: space-between;
+}
+.topBarLeft {
+
+}
+
+.topBarRight {
+    display:flex;
+    justify-content: flex-end;
+
+
+}
+.cardMessage {
+    display:flex;
+
+}
+
+.messageCenter {
+    font-size: small;
+    text-transform:;
+    opacity: 0.5;
+    vertical-align: bottom;
+}
+.messageRight {
+    color:blue;
+    opacity: 0.5;
+    vertical-align: bottom;
+
+}
+.systemMessageCard {
+    opacity: 0.5;
+    justify-content: center;
+}
+
+.messageCard owner {
+    background-color: rgb(162, 242, 162);
+}
